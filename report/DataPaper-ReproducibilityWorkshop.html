@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Felix Jan Nitsch; Manuela Sellitto; Tobias Kalenscher">
 
-<title>Data Article: Trier social stress test and food-choice: Behavioral, self-report &amp; hormonal data</title>
+<title>Data Article: Trier social stress test and food-choice: Behavioral, self-report &amp; hormonal data (Carpentry Workshop Version)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,6 +25,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -54,6 +55,35 @@ div.csl-indent {
 <link href="DataPaper-ReproducibilityWorkshop_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="DataPaper-ReproducibilityWorkshop_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -65,7 +95,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Article: Trier social stress test and food-choice: Behavioral, self-report &amp; hormonal data</h1>
+<h1 class="title">Data Article: Trier social stress test and food-choice: Behavioral, self-report &amp; hormonal data (Carpentry Workshop Version)</h1>
 </div>
 
 
@@ -84,17 +114,25 @@ div.csl-indent {
   </div>
   
 
+
 </header>
 
+
 <p>Citation to the original version of this data article:</p>
-<p>Nitsch, F. J., Sellitto, M., &amp; Kalenscher, T. (2021). Trier social stress test and food-choice: Behavioral, self-report &amp; hormonal data. Data in brief (<strong>Example 1</strong>), <em>37</em>, 107245. https://doi.org/10.1016/j.dib.2021.107245 (<strong>Example 2</strong>)</p>
-<p><strong>Abstract</strong></p>
+<p>Nitsch, F. J., Sellitto, M., &amp; Kalenscher, T. (2021). Trier social stress test and food-choice: Behavioral, self-report &amp; hormonal data. <em>Data in brief</em> (<strong>Example 1</strong>), <em>37</em>, 107245. <a href="https://doi.org/10.1016/j.dib.2021.107245" class="uri">https://doi.org/10.1016/j.dib.2021.107245</a> (<strong>Example 2</strong>)</p>
+<section id="abstract" class="level1">
+<h1><strong>Abstract</strong></h1>
 <p>A sample of 144 participants underwent the Trier Social Stress Test (TSST), a psychosocial stress manipulation involving a mock interview and a mental arithmetic task, or a matched control procedure. Physiological stress was estimated via a collection of 7 saliva samples over the course of the experiment analysed for cortisol and alpha-amylase, as well as via the mean heart-rate measured before and during the experimental manipulation. Subjective stress was assessed via the Positive and Negative Affect Scale as well as four Visual Analogue Scales at 6 points over the time course of the experiment.</p>
 <p><strong>Keywords:</strong> Acute stress; Amylase Choice Consistency; Cortisol; Chronic StressFood-Choice; Rationality.</p>
-<p><strong>1. Value of the Data</strong> (<strong>Example 3</strong>)</p>
+<section id="value-of-the-data-example-3" class="level2">
+<h2 class="anchored" data-anchor-id="value-of-the-data-example-3"><strong>1. Value of the Data</strong> (<strong>Example 3</strong>)</h2>
 <p>(<strong>Example 4</strong>)</p>
-<p>The data are useful, as both the analysis of salivary cortisol for a relatively large sample as well as the implementation of an incentive-compatible behavioral task are expensive. Further, data sharing in the field of choice consistency/rationality is still relatively uncommon, making the aggregation of evidence challenging <span class="citation" data-cites="nitsch2020">(<a href="#ref-nitsch2020" role="doc-biblioref">Nitsch and Kalenscher 2020</a>)</span>.</p>
-<p>The data is valuable to researchers interested in the interplay of physiological and subjective stress. It enables exploratory data-analysis regarding individual differences in stress reactivity and mediators of the stress response.</p>
+<p><span class="citation" data-cites="kirschbaum2007">(<a href="#ref-kirschbaum2007" role="doc-biblioref">Kirschbaum and Hellhammer 2007</a>)</span></p>
+<ol type="1">
+<li><p>The data are useful, as both the analysis of salivary cortisol for a relatively large sample as well as the implementation of an incentive-compatible behavioral task are expensive. Further, data sharing in the field of choice consistency/rationality is still relatively uncommon, making the aggregation of evidence challenging <span class="citation" data-cites="nitsch2020">(<a href="#ref-nitsch2020" role="doc-biblioref">Nitsch and Kalenscher 2020</a>)</span>.</p></li>
+<li><p>The data is valuable to researchers interested in the interplay of physiological and subjective stress. It enables exploratory data-analysis regarding individual differences in stress reactivity and mediators of the stress response.</p></li>
+</ol>
+</section>
 <section id="data-description" class="level2">
 <h2 class="anchored" data-anchor-id="data-description"><strong>2. Data Description</strong></h2>
 <p>This <a href="https://osf.io/6mvq7/">OSF</a> directory contains the raw and processed data described, as well as analysis scripts required to computationally reproduce the results and plots reported in the <em>related research article</em>. The structure of the directory is:</p>
@@ -114,24 +152,63 @@ div.csl-indent {
 </ul></li>
 </ul>
 <p>To repeat the analyses of the <em>related research article</em>, follow the instructions in the original project README file (<a href="https://osf.io/6mvq7/">https://osf.io/6mvq7</a>).</p>
-<p>The CSV file contains choice consistency data for (n? <strong>Example 7A</strong>) simulated participants that have been used to determine the power of our food-choice task design to detect choice consistency violations, which averaged (<strong>Example 7B</strong>). Simulated participants solved one measurement (11 trials) of the food-choice task. Simulated choices were uniform-random among the choice sets. Data contains the critical cost efficiency index based on the parameters defined by <span class="citation" data-cites="nitsch2020">Nitsch and Kalenscher (<a href="#ref-nitsch2020" role="doc-biblioref">2020</a>)</span> and <span class="citation" data-cites="afriat1972">Afriat (<a href="#ref-afriat1972" role="doc-biblioref">1972</a>)</span>.</p>
+<p>The CSV file contains choice consistency data for 10000(n? <strong>Example 7A</strong>) simulated participants that have been used to determine the power of our food-choice task design to detect choice consistency violations, which averaged 5.3924(<strong>Example 7B</strong>). Simulated participants solved one measurement (11 trials) of the food-choice task. Simulated choices were uniform-random among the choice sets. Data contains the critical cost efficiency index based on the parameters defined by <span class="citation" data-cites="nitsch2020">Nitsch and Kalenscher (<a href="#ref-nitsch2020" role="doc-biblioref">2020</a>)</span> and <span class="citation" data-cites="afriat1972">Afriat (<a href="#ref-afriat1972" role="doc-biblioref">1972</a>)</span>.</p>
 </section>
 </section>
 <section id="experimental-design-materials-and-methods" class="level2">
 <h2 class="anchored" data-anchor-id="experimental-design-materials-and-methods"><strong>3. Experimental Design, Materials and Methods</strong></h2>
 <p>The dataset contains data of 144 participants. Participants did not have formal psychological or economic education, were 18–40 years old, non-smokers and did not take medication that could have influenced their corticosteroid levels. Women were not taking oral contraceptives. Similar to previous studies, participants had to refrain from drinking alcohol and sexual activities for 24 h, from caffeine for four hours and from eating/drinking (except water) for two hours prior to the beginning of the experiment.</p>
 <p>(<strong>Example 5</strong>)</p>
+<div id="fig-fig1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/Fig1.jpg" id="fig-fig1" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-fig1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
+</figcaption>
+</figure>
+</div>
 <p>[Fig. 1 provides an exact overview of the experimental timeline for each measure we collected. All experimental sessions took place from 3 p.m. to 6 p.m. to control for circadian variations of hormonal levels. Participants were assigned to the two experimental conditions pseudo-randomly.]</p>
+<p><a href="#fig-fig1" class="quarto-xref">Figure&nbsp;1</a></p>
 <p>Our food-choice task was administered following a 2 × 3 mixed-factorial design with Experimental Group (stress vs.&nbsp;control) as between-subject factor and Measurement (Baseline, Early, Late) as within-subject factor. We deployed a standard food-choice task similar to the one used by <span class="citation" data-cites="harbaugh2001">Harbaugh, Krause, and Berry (<a href="#ref-harbaugh2001" role="doc-biblioref">2001</a>)</span> and <span class="citation" data-cites="chung2017">Chung, Tymula, and Glimcher (<a href="#ref-chung2017" role="doc-biblioref">2017</a>)</span>. In each trial, participants chose one out of a set of two to seven snack bundles. Each snack bundle consisted of specific amounts of a sweet or salty snack and a fruit or vegetable. The choice set was defined by all integer combinations of sweet or salty snack and fruit or vegetable on the budget-line. The budget-line was given by the following formula:</p>
-<p>(<strong>Example 6</strong>) Amount (fruit/vegetable) = - px/py Amount (sweet/salty) + m/py</p>
+<p>(<strong>Example 6</strong>) <span class="math inline">\(Amount (fruit/vegetable) = - px/py Amount (sweet/salty) + m/py\)</span></p>
 <p>At the end of the experiment, one trial was randomly selected for each participant, and their choice in that trial was implemented, i.e., participants received their chosen snack bundle. The experimental task was presented via PsychoPy <span class="citation" data-cites="peirce2007">Peirce (<a href="#ref-peirce2007" role="doc-biblioref">2007</a>)</span>. For 8 participants (out of N = 144 participants), no or incomplete food-choice data were saved due to a technical failure of the experimental hardware.</p>
 </section>
 <section id="preview-of-research-results" class="level2">
 <h2 class="anchored" data-anchor-id="preview-of-research-results"><strong>4. Preview of Research Results</strong></h2>
-<p><strong>Cross-reference (Figure 2)</strong> below describes the mean heart rate of stress and control groups at baseline and during intervention.</p>
+<p><strong>Cross-reference (Figure 2)</strong> <a href="#fig-heartrate" class="quarto-xref">Figure&nbsp;2</a> below describes the mean heart rate of stress and control groups at baseline and during intervention.</p>
 <p>(<strong>Example 8</strong>) add Fig 2 - Heart Rate Analysis</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-heartrate" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-heartrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="DataPaper-ReproducibilityWorkshop_files/figure-html/fig-heartrate-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-heartrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Mean heart rate of stress and control groups at baseline and during intervention
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
 <p>(<strong>Example 9</strong>) add Fig 3: Cortisol and Amylase Levels in Stress and Control Groups</p>
-<p>All analyses were conducted in R in the RStudio IDE, using the packages Tidyverse (<strong>add citation here</strong>), stringi (<strong>add citation here</strong>), BayesFactor, and patchwork.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-hormones" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hormones-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="DataPaper-ReproducibilityWorkshop_files/figure-html/fig-hormones-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hormones-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Fig 3: Cortisol and Amylase levels in stress and control groups
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>All analyses were conducted in R in the RStudio IDE, using the packages Tidyverse <span class="citation" data-cites="wickham2019">(<a href="#ref-wickham2019" role="doc-biblioref">Wickham et al. 2019</a>)</span>, stringi (<strong>add citation here</strong>), BayesFactor, and patchwork.</p>
 </section>
 <section id="ethics-statement" class="level2">
 <h2 class="anchored" data-anchor-id="ethics-statement">Ethics Statement</h2>
@@ -139,7 +216,7 @@ div.csl-indent {
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-afriat1972" class="csl-entry" role="listitem">
 Afriat, S. N. 1972. <span>“Efficiency Estimation of Production Functions.”</span> <em>International Economic Review</em> 13 (3): 568. <a href="https://doi.org/10.2307/2525845">https://doi.org/10.2307/2525845</a>.
 </div>
@@ -149,13 +226,20 @@ Chung, Hui-Kuan, Agnieszka Tymula, and Paul Glimcher. 2017. <span>“The Reducti
 <div id="ref-harbaugh2001" class="csl-entry" role="listitem">
 Harbaugh, William T, Kate Krause, and Timothy R Berry. 2001. <span>“GARP for Kids: On the Development of Rational Choice Behavior.”</span> <em>American Economic Review</em> 91 (5): 1539–45. <a href="https://doi.org/10.1257/aer.91.5.1539">https://doi.org/10.1257/aer.91.5.1539</a>.
 </div>
+<div id="ref-kirschbaum2007" class="csl-entry" role="listitem">
+Kirschbaum, C., and D. H. Hellhammer. 2007. <span>“Salivary Cortisol.”</span> In, 405–9. Elsevier. <a href="https://doi.org/10.1016/b978-012373947-6.00334-2">https://doi.org/10.1016/b978-012373947-6.00334-2</a>.
+</div>
 <div id="ref-nitsch2020" class="csl-entry" role="listitem">
 Nitsch, Felix Jan, and Tobias Kalenscher. 2020. <span>“Keeping a Cool Head at All Times. What Determines Choice Consistency?”</span> <a href="http://dx.doi.org/10.31234/osf.io/etyhx">http://dx.doi.org/10.31234/osf.io/etyhx</a>.
 </div>
 <div id="ref-peirce2007" class="csl-entry" role="listitem">
 Peirce, Jonathan W. 2007. <span>“PsychoPy<span></span>Psychophysics Software in Python.”</span> <em>Journal of Neuroscience Methods</em> 162 (1-2): 8–13. <a href="https://doi.org/10.1016/j.jneumeth.2006.11.017">https://doi.org/10.1016/j.jneumeth.2006.11.017</a>.
 </div>
+<div id="ref-wickham2019" class="csl-entry" role="listitem">
+Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. 2019. <span>“Welcome to the Tidyverse.”</span> <em>Journal of Open Source Software</em> 4 (43): 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
 </div>
+</div>
+</section>
 </section>
 
 </main>
@@ -239,10 +323,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -252,8 +353,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -265,7 +375,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -309,6 +542,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -334,6 +568,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -394,6 +654,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
